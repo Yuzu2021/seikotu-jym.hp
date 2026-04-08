@@ -9,11 +9,11 @@
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  
-  /* 明るめグラデーションに変更👇 */
-  background: linear-gradient(135deg, #2b2b2b, #555, #888);
-  
-  color: #fff;
+
+  /* 女性ウケ背景👇 */
+  background: linear-gradient(135deg, #fff5f7, #ffe4e1, #fceabb);
+
+  color: #333;
   text-align: center;
 
   display: flex;
@@ -25,11 +25,18 @@ body {
 .container {
   width: 100%;
   max-width: 400px;
+  
+  /* ほんのりカード感 */
+  background: rgba(255,255,255,0.7);
+  padding: 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 20px;
+  color: #444;
 }
 
 .button-wrap {
@@ -44,20 +51,20 @@ h1 {
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 12px;
   transition: 0.3s;
 }
 
-/* 整骨院（緑） */
+/* 整骨院（やさしいグリーン） */
 .seikotsu {
-  background: #28a745;
+  background: #7ed957;
   color: #fff;
 }
 
-/* ジム（黄色） */
+/* ジム（柔らかいイエロー） */
 .gym {
-  background: #ffcc00;
-  color: #000;
+  background: #ffd966;
+  color: #333;
 }
 
 .button:hover {
