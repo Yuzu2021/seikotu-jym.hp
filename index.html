@@ -15,41 +15,42 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 h1 {
-  font-size: 26px;
-  margin-bottom: 40px;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.button-wrap {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .button {
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  margin: 15px auto;
-  padding: 20px;
-  font-size: 18px;
+  flex: 1;
+  max-width: 160px;
+  padding: 14px;
+  font-size: 15px;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 12px;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
-/* 整骨院 */
+/* 整骨院（緑） */
 .seikotsu {
-  background: #ffcc00;
-  color: #000;
+  background: #28a745;
+  color: #fff;
 }
 
-/* ジム */
+/* ジム（黄色） */
 .gym {
-  background: #ff6600;
-  color: #fff;
+  background: #ffcc00;
+  color: #000;
 }
 
 .button:hover {
@@ -64,13 +65,15 @@ h1 {
 <div class="container">
   <h1>どちらをご利用ですか？</h1>
 
-  <a href="https://yuzu2021.github.io/lp-seikotsu-0401page/#faq" class="button seikotsu">
-    にしむら整骨院はこちら
-  </a>
+  <div class="button-wrap">
+    <a href="https://yuzu2021.github.io/lp-seikotsu-0401page/#faq" class="button seikotsu">
+      整骨院
+    </a>
 
-  <a href="https://yuzu2021.github.io/gym.hp/#" class="button gym">
-    APRICOT GYMはこちら
-  </a>
+    <a href="https://yuzu2021.github.io/gym.hp/#" class="button gym">
+      APRICOT GYM
+    </a>
+  </div>
 </div>
 
 </body>
