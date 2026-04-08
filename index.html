@@ -9,13 +9,22 @@
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  background: linear-gradient(135deg, #000, #222);
+  
+  /* 明るめグラデーションに変更👇 */
+  background: linear-gradient(135deg, #2b2b2b, #555, #888);
+  
   color: #fff;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-  padding: 40px 20px;
+  width: 100%;
+  max-width: 400px;
 }
 
 h1 {
@@ -27,12 +36,10 @@ h1 {
   display: flex;
   gap: 10px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .button {
   flex: 1;
-  max-width: 160px;
   padding: 14px;
   font-size: 15px;
   font-weight: bold;
